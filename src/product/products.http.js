@@ -29,26 +29,13 @@ const getByCategoryId = (req, res) => {
 }
 
 const getByName = (req, res) => {
-  const data = req.body;
-  const name = data.name;
-
-  if (!Object.keys(data).length) {
-    return res.status(400).json({ message: 'Missing data' });
-  }
-
-  if (!data.name) {
-    return res.status(400).json({
-      message: 'Term name must be completed',
-      fields: {
-        name: 'The term to search'
-      }
-    })
-  }
+  const name = req.params.name;
 
   productsControllers.readProductsByName(name)
     .then(response => res.status(200).json({ items: response.length, response }))
     .catch(error => res.status(400).json({ message: error.message }))
 }
+
 module.exports = {
   getAll,
   getById,

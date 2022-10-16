@@ -4,7 +4,7 @@ const productsServices =require('./products.http');
 router.route('/')
   .get(productsServices.getAll);
 
-router.route('/name')
+router.route('/term/:name')
   .get(productsServices.getByName)
 
 router.route('/:id')
