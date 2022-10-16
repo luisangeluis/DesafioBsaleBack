@@ -1,6 +1,7 @@
 //Dependencies
 const express = require('express');
 const path = require('path');
+const cors =require('cors');
 
 //Archivos db
 const { db } = require('./utils/database');
@@ -36,8 +37,10 @@ if (process.env.NODE_ENV === 'production') {
 //para que el body de la peticion no salga undefined
 app.use(express.json());
 
-//Routes files
+//Cors
+app.use(cors());
 
+//Routes files
 const productsRouter = require('./product/products.routes').router;
 const categoriesRouter = require('./category/categories.routes').router;
 
