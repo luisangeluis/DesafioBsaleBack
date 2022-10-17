@@ -1,15 +1,25 @@
-# RUTAS
+# PROYECTO
+
+Ecommerce
 
 ## INTRODUCCION
 
-Api realizada con node y express y mysql, sirve para consumir los productos disponibles de la bbd.
+Api realizada con node y express, sirve para consumir los productos disponibles de la bbd.
 Por el momento se puede buscar un producto ingresando el nombre del producto y devolvera resultados que se parezcan
 al termino ingresado.
 Se pueden tambien obtener  las categorias de los productos y filtrar los productos a travez de estas.
 
+### Postman
 Se puede consultar con ejemplos en postman.
-
 https://www.postman.com/luisangeluis/workspace/bsale/collection/12459556-a2b21b4d-aef2-488c-95ac-c4be7db537c3
+
+### Tecnologias
+- Mysql
+- Sequelize
+
+### Link del deploy
+- Url base
+- - desafiobsaleback-production.up.railway.app
 
 ## INTRODUCCION RUTAS
 
