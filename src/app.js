@@ -2,6 +2,8 @@
 const express = require('express');
 const path = require('path');
 const cors =require('cors');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDoc = require('../swaggerDoc.json')
 
 //Archivos db
 const { db } = require('./utils/database');
@@ -46,6 +48,7 @@ const categoriesRouter = require('./category/categories.routes').router;
 
 app.use('/api/v1/products', productsRouter);
 app.use('/api/v1/categories', categoriesRouter);
+app.use('/v1/docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
 app.listen(PORT, () => {
   console.log(`server started at port:${PORT}`);
