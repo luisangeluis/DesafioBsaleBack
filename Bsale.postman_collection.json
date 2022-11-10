@@ -1,14 +1,14 @@
 {
 	"info": {
 		"_postman_id": "a2b21b4d-aef2-488c-95ac-c4be7db537c3",
-		"name": "Bsale",
-		"description": "End poinst realizados con node, express y mysql.",
+		"name": "BSALE",
+		"description": "# INTRODUCCIÓN\n\n## Api realizada con node, express y mysql para consumir los productos de la bd en bsale.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "12459556"
 	},
 	"item": [
 		{
-			"name": "products",
+			"name": "- PRODUCTOS",
 			"item": [
 				{
 					"name": "getAll",
@@ -27,9 +27,68 @@
 								"products"
 							]
 						},
-						"description": "Obtiene todos los productos disponibles"
+						"description": "**Obtiene todos los productos disponibles**"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "getAll status 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/v1/products",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "8942"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"22ee-bdwhfaKFrhEQ6YjxOsEJ7gmS6BI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 04:37:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"items\": 57,\n    \"response\": [\n        {\n            \"id\": 5,\n            \"name\": \"ENERGETICA MR BIG\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.jpg\",\n            \"price\": 1490,\n            \"discount\": 20,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 6,\n            \"name\": \"ENERGETICA RED BULL\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/redbull8381.jpg\",\n            \"price\": 1490,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 7,\n            \"name\": \"ENERGETICA SCORE\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/logo7698.png\",\n            \"price\": 1290,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 8,\n            \"name\": \"PISCO ALTO DEL CARMEN 35º\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/alto8532.jpg\",\n            \"price\": 7990,\n            \"discount\": 10,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 9,\n            \"name\": \"PISCO ALTO DEL CARMEN 40º \",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/alto408581.jpg\",\n            \"price\": 5990,\n            \"discount\": 0,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 10,\n            \"name\": \"PISCO ARTESANOS 35º \",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/artesanos8818.jpg\",\n            \"price\": 3990,\n            \"discount\": 0,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 11,\n            \"name\": \"PISCO BAUZA 40º \",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/bauza408831.jpg\",\n            \"price\": 4990,\n            \"discount\": 0,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 12,\n            \"name\": \"PISCO CAMPANARIO 35º\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/campanario8845.jpg\",\n            \"price\": 2990,\n            \"discount\": 20,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 13,\n            \"name\": \"PISCO CAMPANARIO 40º\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/campanario408881.jpg\",\n            \"price\": 3990,\n            \"discount\": 20,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 14,\n            \"name\": \"PISCO ESPIRITU DEL ELQUI 40º\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/espiritu8936.jpg\",\n            \"price\": 5990,\n            \"discount\": 20,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 15,\n            \"name\": \"PISCO ESPIRITU DEL ELQUI 45º\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/espiritu8957.jpg\",\n            \"price\": 6990,\n            \"discount\": 5,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 16,\n            \"name\": \"PISCO HORCON QUEMADO 35º\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/horcon359049.jpg\",\n            \"price\": 6990,\n            \"discount\": 20,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 17,\n            \"name\": \"PISCO HORCON QUEMADO 40º\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/horcon409062.jpg\",\n            \"price\": 7990,\n            \"discount\": 20,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 18,\n            \"name\": \"PISCO HORCON QUEMADO 46º\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/horcon469075.jpg\",\n            \"price\": 8990,\n            \"discount\": 20,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 19,\n            \"name\": \"PISCO MISTRAL 35º\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/mistral359200.jpg\",\n            \"price\": 4990,\n            \"discount\": 20,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 20,\n            \"name\": \"PISCO MISTRAL 40º \",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/mistral409215.jpg\",\n            \"price\": 4990,\n            \"discount\": 20,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 21,\n            \"name\": \"PISCO TRES ERRES 35º\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/rrr359305.jpg\",\n            \"price\": 4590,\n            \"discount\": 20,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 22,\n            \"name\": \"PISCO TRES ERRES 40º\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/rrr409319.jpg\",\n            \"price\": 4990,\n            \"discount\": 20,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 23,\n            \"name\": \"RON BACARDI AÑEJO\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/bacardi9450.jpg\",\n            \"price\": 4990,\n            \"discount\": 0,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 24,\n            \"name\": \"RON BACARDI 8 AÑOS\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/bacardianejo9463.jpg\",\n            \"price\": 5990,\n            \"discount\": 0,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 25,\n            \"name\": \"RON ABUELO\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/abuelo9475.jpg\",\n            \"price\": 3990,\n            \"discount\": 0,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 26,\n            \"name\": \"RON BARCELO AÑEJO\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/barceloanejo9553.jpg\",\n            \"price\": 4990,\n            \"discount\": 0,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 27,\n            \"name\": \"RON BARCELO DORADO\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/barcelodorado9567.jpg\",\n            \"price\": 3990,\n            \"discount\": 0,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 28,\n            \"name\": \"RON FLOR DE CAÑA 4 AÑOS\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/flor49664.jpg\",\n            \"price\": 3990,\n            \"discount\": 0,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 29,\n            \"name\": \"RON FLOR DE CAÑA 5 AÑOS\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/flor59677.jpg\",\n            \"price\": 4590,\n            \"discount\": 0,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 30,\n            \"name\": \"RON HAVANA AÑEJO RESERVA\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/havanaan-ejo9750.jpg\",\n            \"price\": 6990,\n            \"discount\": 0,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 31,\n            \"name\": \"RON HAVANA ESPECIAL\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/havanaespecial9768.jpg\",\n            \"price\": 5990,\n            \"discount\": 20,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 32,\n            \"name\": \"RON PAMPERO\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/pampero-especial0296.jpg\",\n            \"price\": 5490,\n            \"discount\": 20,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 33,\n            \"name\": \"RON PAMPERO ANIVERSARIO\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/ron_pampero_aniversario0311.jpg\",\n            \"price\": 20000,\n            \"discount\": 15,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 34,\n            \"name\": \"ENERGETICA MONSTER RIPPER\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/mosterriper0436.jpg\",\n            \"price\": 1990,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 35,\n            \"name\": \"ENERGETICA MAKKA DRINKS\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/makka-drinks-250ml0455.jpg\",\n            \"price\": 1190,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 36,\n            \"name\": \"ENERGETICA MONSTER VERDE\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/monsterverde0476.jpg\",\n            \"price\": 1990,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 37,\n            \"name\": \"COCA COLA ZERO DESECHABLE\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/cocazero9766.jpg\",\n            \"price\": 1490,\n            \"discount\": 0,\n            \"categoryId\": 4\n        },\n        {\n            \"id\": 38,\n            \"name\": \"RON BOTRAN AÑEJO 5 AÑOS\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/ronbotran9337.jpg\",\n            \"price\": 4990,\n            \"discount\": 0,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 39,\n            \"name\": \"RON MITJANS\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/mitjan6396.jpg\",\n            \"price\": 2990,\n            \"discount\": 0,\n            \"categoryId\": 3\n        },\n        {\n            \"id\": 47,\n            \"name\": \"Maní salado\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/manisaladomp4415.jpg\",\n            \"price\": 600,\n            \"discount\": 0,\n            \"categoryId\": 5\n        },\n        {\n            \"id\": 48,\n            \"name\": \"SPRITE 1 1/2 Lts\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/sprite-lata-33cl5575.jpg\",\n            \"price\": 1500,\n            \"discount\": 0,\n            \"categoryId\": 4\n        },\n        {\n            \"id\": 50,\n            \"name\": \"SPRITE 2 Lt\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/sprite-2lt4365.jpg\",\n            \"price\": 1800,\n            \"discount\": 0,\n            \"categoryId\": 4\n        },\n        {\n            \"id\": 52,\n            \"name\": \"Fanta\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/fanta_2lt5236.jpg\",\n            \"price\": 1500,\n            \"discount\": 0,\n            \"categoryId\": 4\n        },\n        {\n            \"id\": 53,\n            \"name\": \"Mani Sin Sal\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/manisinsalmp6988.jpg\",\n            \"price\": 500,\n            \"discount\": 0,\n            \"categoryId\": 5\n        },\n        {\n            \"id\": 54,\n            \"name\": \"Papas Fritas Lisas Bolsa Grande\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/papaslisasgrande7128.jpg\",\n            \"price\": 1490,\n            \"discount\": 0,\n            \"categoryId\": 5\n        },\n        {\n            \"id\": 55,\n            \"name\": \"Papas Fritas Bolsa Pequeña\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/papaslisas7271.jpg\",\n            \"price\": 500,\n            \"discount\": 0,\n            \"categoryId\": 5\n        },\n        {\n            \"id\": 56,\n            \"name\": \"Papas Fritas Tarro\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/78028005335657432.jpg\",\n            \"price\": 1990,\n            \"discount\": 0,\n            \"categoryId\": 5\n        },\n        {\n            \"id\": 57,\n            \"name\": \"COCA COLA NORMAL DESECHABLE 1500cc\",\n            \"urlImage\": null,\n            \"price\": 1500,\n            \"discount\": 0,\n            \"categoryId\": 4\n        },\n        {\n            \"id\": 58,\n            \"name\": \"COCA COLA LIGHT DESECHABLE\",\n            \"urlImage\": null,\n            \"price\": 1500,\n            \"discount\": 0,\n            \"categoryId\": 4\n        },\n        {\n            \"id\": 68,\n            \"name\": \"Bebida Sprite 1 Lt\",\n            \"urlImage\": null,\n            \"price\": 1250,\n            \"discount\": 10,\n            \"categoryId\": 4\n        },\n        {\n            \"id\": 77,\n            \"name\": \"ENERGETICA MONSTER RIPPER\",\n            \"urlImage\": \"\",\n            \"price\": 1990,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 79,\n            \"name\": \"ENERGETICA MONSTER VERDE\",\n            \"urlImage\": \"\",\n            \"price\": 1990,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 87,\n            \"name\": \"PISCO MISTRAL 35°\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/358978.jpg\",\n            \"price\": 4990,\n            \"discount\": 0,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 88,\n            \"name\": \"PISCO MISTRAL GRAN NOBEL 40°\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/grannobel9104.jpg\",\n            \"price\": 19900,\n            \"discount\": 0,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 89,\n            \"name\": \"PISCO MISTRAL 40°\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/409346.jpg\",\n            \"price\": 4990,\n            \"discount\": 0,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 90,\n            \"name\": \"PISCO MISTRAL 46°\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/469463.jpg\",\n            \"price\": 7890,\n            \"discount\": 0,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 91,\n            \"name\": \"PISCO MISTRAL NOBEL 40°\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/nobel409551.jpg\",\n            \"price\": 19990,\n            \"discount\": 0,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 92,\n            \"name\": \"PISCO MISTRAL NOBEL 46\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/nobelanejado9639.jpg\",\n            \"price\": 15990,\n            \"discount\": 15,\n            \"categoryId\": 2\n        },\n        {\n            \"id\": 98,\n            \"name\": \"Cerveza Escudo Normal LATA 350CC\",\n            \"urlImage\": \"\",\n            \"price\": 600,\n            \"discount\": 0,\n            \"categoryId\": 6\n        },\n        {\n            \"id\": 99,\n            \"name\": \"Cerveza Escudo Sin Filtrar LATA 350CC\",\n            \"urlImage\": \"\",\n            \"price\": 800,\n            \"discount\": 0,\n            \"categoryId\": 6\n        },\n        {\n            \"id\": 104,\n            \"name\": \"ABSOLUT\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/absolut21381.png\",\n            \"price\": 8990,\n            \"discount\": 30,\n            \"categoryId\": 7\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "getByName",
@@ -56,9 +115,76 @@
 								}
 							]
 						},
-						"description": "Filtra para encontrar productos con nombres parecidos en el valor ingresado en :name."
+						"description": "**Filtra para encontrar productos con nombres parecidos en el valor ingresado en :name.**"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "getByName status 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/v1/products/term/:name",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										"term",
+										":name"
+									],
+									"variable": [
+										{
+											"key": "name",
+											"value": "papas"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "540"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"21c-ugY68BA6Qd0EPmddglhV3zjXmk0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 04:59:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"items\": 3,\n    \"response\": [\n        {\n            \"id\": 54,\n            \"name\": \"Papas Fritas Lisas Bolsa Grande\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/papaslisasgrande7128.jpg\",\n            \"price\": 1490,\n            \"discount\": 0,\n            \"categoryId\": 5\n        },\n        {\n            \"id\": 55,\n            \"name\": \"Papas Fritas Bolsa Pequeña\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/papaslisas7271.jpg\",\n            \"price\": 500,\n            \"discount\": 0,\n            \"categoryId\": 5\n        },\n        {\n            \"id\": 56,\n            \"name\": \"Papas Fritas Tarro\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/78028005335657432.jpg\",\n            \"price\": 1990,\n            \"discount\": 0,\n            \"categoryId\": 5\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "getById",
@@ -84,14 +210,146 @@
 								}
 							]
 						},
-						"description": "Obtiene un producto por su id"
+						"description": "**Obtiene un producto por su id.**"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "getById status 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/v1/products/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "158"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9e-erepuR8S7gTmsmAYdPbvP2y4fak\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 05:00:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"name\": \"ENERGETICA RED BULL\",\n    \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/redbull8381.jpg\",\n    \"price\": 1490,\n    \"discount\": 0,\n    \"categoryId\": 1\n}"
+						},
+						{
+							"name": "getById status 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/v1/products/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"products",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d-c0FF/9M11T5BHdrrHwhOrNaNBUI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 05:02:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product with id:4 doesn't exist\"\n}"
+						}
+					]
 				}
-			]
+			],
+			"description": "### Rutas para consumir los productos."
 		},
 		{
-			"name": "categories",
+			"name": "- CATEGORIAS",
 			"item": [
 				{
 					"name": "getAll",
@@ -110,9 +368,68 @@
 								"categories"
 							]
 						},
-						"description": "Obtiene todas las categorias disponibles."
+						"description": "**Obtiene todas las categorias disponibles.**"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "getAll status 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/v1/categories",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "205"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cd-qdlsBRa5TDL1DRPxvULAtnjpmaI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 05:04:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"items\": 7,\n    \"response\": [\n        {\n            \"id\": 1,\n            \"name\": \"bebida energetica\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"pisco\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"ron\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"bebida\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"snack\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"cerveza\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"vodka\"\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "getByCategoryId",
@@ -139,9 +456,142 @@
 								}
 							]
 						},
-						"description": "Obtiene todos los productos correspondientes a la categoria ingresada."
+						"description": "**Obtiene todos los productos correspondientes a la categoria ingresada.**"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "getByCategoryId status 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/v1/categories/:id/products",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										":id",
+										"products"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1213"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4bd-yt9ZhEcUCwBYeEeG/yynoktt3YY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 05:04:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"items\": 8,\n    \"response\": [\n        {\n            \"id\": 5,\n            \"name\": \"ENERGETICA MR BIG\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.jpg\",\n            \"price\": 1490,\n            \"discount\": 20,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 6,\n            \"name\": \"ENERGETICA RED BULL\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/redbull8381.jpg\",\n            \"price\": 1490,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 7,\n            \"name\": \"ENERGETICA SCORE\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/logo7698.png\",\n            \"price\": 1290,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 34,\n            \"name\": \"ENERGETICA MONSTER RIPPER\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/mosterriper0436.jpg\",\n            \"price\": 1990,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 35,\n            \"name\": \"ENERGETICA MAKKA DRINKS\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/makka-drinks-250ml0455.jpg\",\n            \"price\": 1190,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 36,\n            \"name\": \"ENERGETICA MONSTER VERDE\",\n            \"urlImage\": \"https://dojiw2m9tvv09.cloudfront.net/11132/product/monsterverde0476.jpg\",\n            \"price\": 1990,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 77,\n            \"name\": \"ENERGETICA MONSTER RIPPER\",\n            \"urlImage\": \"\",\n            \"price\": 1990,\n            \"discount\": 0,\n            \"categoryId\": 1\n        },\n        {\n            \"id\": 79,\n            \"name\": \"ENERGETICA MONSTER VERDE\",\n            \"urlImage\": \"\",\n            \"price\": 1990,\n            \"discount\": 0,\n            \"categoryId\": 1\n        }\n    ]\n}"
+						},
+						{
+							"name": "getByCategoryId status 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/v1/categories/:id/products",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										":id",
+										"products"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "15"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f-yz3S/AE+6b0rkb4KXAV9XpJIFMY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 05:13:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category with id:15 doesn't exist\"\n}"
+						}
+					]
 				},
 				{
 					"name": "getById",
@@ -167,11 +617,143 @@
 								}
 							]
 						},
-						"description": "Obtiene la información de una categoria por su id."
+						"description": "**Obtiene la información de una categoria por su id.**"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "getById status 200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/v1/categories/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-/5/deCCZwFP8ig95U6zbDUrQsVU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 05:13:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"bebida energetica\"\n}"
+						},
+						{
+							"name": "getById status 404",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/v1/categories/:id",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"categories",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "15"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f-yz3S/AE+6b0rkb4KXAV9XpJIFMY\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 10 Nov 2022 05:14:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Category with id:15 doesn't exist\"\n}"
+						}
+					]
 				}
-			]
+			],
+			"description": "## Ruta para consumir las categorias"
 		}
 	]
 }

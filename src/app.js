@@ -2,12 +2,10 @@
 const express = require('express');
 const path = require('path');
 const cors =require('cors');
-// const swaggerUi = require('swagger-ui-express');
-// const swaggerDoc = require('../swaggerDoc.json')
 
 //Archivos db
 const { db } = require('./utils/database');
-const defaultData = require('./utils/defaultData');
+// const defaultData = require('./utils/defaultData');
 const initModels = require('./models/init.models');
 initModels();
 
@@ -19,23 +17,21 @@ db.authenticate()
   .then(res => console.log('database autenticate'))
   .catch(error => console.log(error))
 
-//{force:true}// es solo para desarrollo.
-if (process.env.NODE_ENV === 'production') {
-  db.sync()
-    .then(() => {
-      console.log('database synced');
-      defaultData();
-    })
-    .catch(error => console.log(error))
-} else {
-  // db.sync({ force: true })
-  db.sync()
-    .then(() => {
-      console.log('database synced');
-      defaultData();
-    })
-    .catch(error => console.log(error))
-}
+// if (process.env.NODE_ENV === 'production') {
+//   db.sync()
+//     .then(() => {
+//       console.log('database synced');
+//       defaultData();
+//     })
+//     .catch(error => console.log(error))
+// } else {
+//   db.sync()
+//     .then(() => {
+//       console.log('database synced');
+//       defaultData();
+//     })
+//     .catch(error => console.log(error))
+// }
 //para que el body de la peticion no salga undefined
 app.use(express.json());
 
@@ -46,9 +42,9 @@ app.use(cors());
 const productsRouter = require('./product/products.routes').router;
 const categoriesRouter = require('./category/categories.routes').router;
 
+//Routes
 app.use('/api/v1/products', productsRouter);
 app.use('/api/v1/categories', categoriesRouter);
-// app.use('/v1/docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
 app.listen(PORT, () => {
   console.log(`server started at port:${PORT}`);

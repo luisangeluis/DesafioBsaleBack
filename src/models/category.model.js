@@ -1,6 +1,9 @@
+//Dependencies
 const { DataTypes } = require('sequelize');
+//Conexion a bd.
 const { db } = require('../utils/database');
 
+//Modelo de categories
 const categories =db.define('category',{
 id: {
     primaryKey: true,

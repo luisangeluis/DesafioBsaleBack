@@ -1,6 +1,4 @@
-# PROYECTO
-
-Ecommerce
+# Ecommerce
 
 ## INTRODUCCION
 
@@ -12,6 +10,9 @@ Se pueden tambien obtener  las categorias de los productos y filtrar los product
 ### Postman
 Se puede consultar con ejemplos en postman.
 https://www.postman.com/luisangeluis/workspace/bsale/collection/12459556-a2b21b4d-aef2-488c-95ac-c4be7db537c3
+
+Api realizada con node, express y mysql, realizada para mostrar consumir los productos de la bd en bsale.
+## postman https://documenter.getpostman.com/view/12459556/2s8YekSaaU acomodar
 
 ### Tecnologias
 - Mysql
@@ -56,6 +57,7 @@ https://www.postman.com/luisangeluis/workspace/bsale/collection/12459556-a2b21b4
 - /api/v1/products
 - - Obtiene todos los productos disponibles.
 
+```javascript
 {
   "items":2,
   "response":[
@@ -77,10 +79,11 @@ https://www.postman.com/luisangeluis/workspace/bsale/collection/12459556-a2b21b4
     }
   ]
 }
-
+```
 - /api/v1/products/term/:name
 - - Obtiene los productos que se parezcan al nombre ingresado.
 
+```javascript
 {
   "items": 2,
   "response": [
@@ -102,9 +105,12 @@ https://www.postman.com/luisangeluis/workspace/bsale/collection/12459556-a2b21b4
     }
   ]
 }
+```
 
 - /api/v1/products/:id
 - - Obtiene un producto por su id.
+
+```javascript
 {
   "id": 6,
   "name": "ENERGETICA RED BULL",
@@ -113,9 +119,12 @@ https://www.postman.com/luisangeluis/workspace/bsale/collection/12459556-a2b21b4
   "discount": 0,
   "categoryId": 1
 }
+```
 
 - /api/v1/categories
 - - Obtiene todas las categorias de los productos.
+
+```javascript
 {
   "items": 7,
   "response": [
@@ -149,9 +158,12 @@ https://www.postman.com/luisangeluis/workspace/bsale/collection/12459556-a2b21b4
     }
   ]
 }
+```
 
 - /api/v1/categories/:id/products
 - - Obtiene los productos que pertenezcan a una categoria en especifico.
+
+```javascript
 {
   "items": 8,
   "response": [
@@ -221,10 +233,20 @@ https://www.postman.com/luisangeluis/workspace/bsale/collection/12459556-a2b21b4
     }
   ]
 }
+```
 
 - /api/v1/categories/:id
 - - Obtiene una categoria por su id.
+
+```javascript
 {
   "id": 1,
   "name": "bebida energetica"
 }
+```
+
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/12459556-a2b21b4d-aef2-488c-95ac-c4be7db537c3?action=collection%2Ffork&collection-url=entityId%3D12459556-a2b21b4d-aef2-488c-95ac-c4be7db537c3%26entityType%3Dcollection%26workspaceId%3D3832ba21-03bc-4fec-835f-47724b1aef42)
+
+
+https://www.postman.com/luisangeluis/workspace/bsale/collection/12459556-a2b21b4d-aef2-488c-95ac-c4be7db537c3?action=share&creator=12459556
