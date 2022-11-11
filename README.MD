@@ -1,4 +1,6 @@
-# Ecommerce
+# Ecommerce ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
+
 
 ## INTRODUCCION
 
@@ -17,10 +19,13 @@ Se pueden tambien obtener  las categorias de los productos y filtrar los product
 
 **Para acceder a los diferentes recursos es necesario ingresar la ruta https://desafiobsaleback-production.up.railway.app y concatenarla con alguna de las rutas que viene en el apartado de la documentacion.**
 
-#### Ejemplo:
+#### **Ejemplo**:
 
 **https://desafiobsaleback-production.up.railway.app/api/v1/categories**  
 
+## INSTALACION
+
+**Puedes instalarlo clonando el siguiente repositorio en [Github](https://github.com/luisangeluis/DesafioBsaleBack.git)**
 ## DOCUMENTACIÓN
 
 - [Documentacion en Postman](https://documenter.getpostman.com/view/12459556/2s8YekSaaU) 
@@ -125,7 +130,11 @@ Se pueden tambien obtener  las categorias de los productos y filtrar los product
   ]
 }
 ```
-## Licencia.
+## Contribución
+
+Puedes crear un pull request al proyecto.
+
+## Licencia
 
 Licencia [MIT](https://opensource.org/licenses/MIT)
 
