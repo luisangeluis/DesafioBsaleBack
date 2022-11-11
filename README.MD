@@ -7,22 +7,28 @@ Por el momento se puede buscar un producto ingresando el nombre del producto y d
 al termino ingresado.
 Se pueden tambien obtener  las categorias de los productos y filtrar los productos a travez de estas.
 
-### Postman
-Se puede consultar con ejemplos en postman.
-https://www.postman.com/luisangeluis/workspace/bsale/collection/12459556-a2b21b4d-aef2-488c-95ac-c4be7db537c3
-
-Api realizada con node, express y mysql, realizada para mostrar consumir los productos de la bd en bsale.
-## postman https://documenter.getpostman.com/view/12459556/2s8YekSaaU acomodar
-
-### Tecnologias
+## TECNOLOGÍAS
 - Mysql
-- Sequelize
+- Sequelize 6.21.24
 
-### Link del deploy
-- Url base
-- - desafiobsaleback-production.up.railway.app
+## LINK DEL DEPLOY
 
-## INTRODUCCION RUTAS
+- [Railway.app](https://desafiobsaleback-production.up.railway.app/) 
+
+**Para acceder a los diferentes recursos es necesario ingresar la ruta https://desafiobsaleback-production.up.railway.app y concatenarla con alguna de las rutas que viene en el apartado de la documentacion.**
+
+#### Ejemplo:
+
+**https://desafiobsaleback-production.up.railway.app/api/v1/categories**  
+
+## DOCUMENTACIÓN
+
+- [Documentacion en Postman](https://documenter.getpostman.com/view/12459556/2s8YekSaaU) 
+- [Ver colección offline](./BSALE.postman_collection.json) <br />
+
+ [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/12459556-a2b21b4d-aef2-488c-95ac-c4be7db537c3?action=collection%2Ffork&collection-url=entityId%3D12459556-a2b21b4d-aef2-488c-95ac-c4be7db537c3%26entityType%3Dcollection%26workspaceId%3D3832ba21-03bc-4fec-835f-47724b1aef42)
+
+### Rutas
 
 - /api/v1/products
 - /api/v1/products/term/:name
@@ -32,7 +38,7 @@ Api realizada con node, express y mysql, realizada para mostrar consumir los pro
 - /api/v1/categories/:id/products
 - /api/v1/categories/:id
 
-## DETALLES DE RUTAS
+### Detalle de rutas
 
 - /api/v1/products
 - - GET
@@ -52,7 +58,7 @@ Api realizada con node, express y mysql, realizada para mostrar consumir los pro
 - /api/v1/categories/:id
 - - GET
 
-## EJEMPLOS
+### Ejemplos
 
 - /api/v1/products
 - - Obtiene todos los productos disponibles.
@@ -78,46 +84,6 @@ Api realizada con node, express y mysql, realizada para mostrar consumir los pro
       "categoryId": 1
     }
   ]
-}
-```
-- /api/v1/products/term/:name
-- - Obtiene los productos que se parezcan al nombre ingresado.
-
-```javascript
-{
-  "items": 2,
-  "response": [
-    {
-      "id": 54,
-      "name": "Papas Fritas Lisas Bolsa Grande",
-      "urlImage": "https://dojiw2m9tvv09.cloudfront.net/11132/product/papaslisasgrande7128.jpg",
-      "price": 1490,
-      "discount": 0,
-      "categoryId": 5
-    },
-    {
-      "id": 55,
-      "name": "Papas Fritas Bolsa Pequeña",
-      "urlImage": "https://dojiw2m9tvv09.cloudfront.net/11132/product/papaslisas7271.jpg",
-      "price": 500,
-      "discount": 0,
-      "categoryId": 5
-    }
-  ]
-}
-```
-
-- /api/v1/products/:id
-- - Obtiene un producto por su id.
-
-```javascript
-{
-  "id": 6,
-  "name": "ENERGETICA RED BULL",
-  "urlImage": "https://dojiw2m9tvv09.cloudfront.net/11132/product/redbull8381.jpg",
-  "price": 1490,
-  "discount": 0,
-  "categoryId": 1
 }
 ```
 
@@ -159,94 +125,12 @@ Api realizada con node, express y mysql, realizada para mostrar consumir los pro
   ]
 }
 ```
+## Licencia.
 
-- /api/v1/categories/:id/products
-- - Obtiene los productos que pertenezcan a una categoria en especifico.
-
-```javascript
-{
-  "items": 8,
-  "response": [
-    {
-      "id": 5,
-      "name": "ENERGETICA MR BIG",
-      "urlImage": "https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.jpg",
-      "price": 1490,
-      "discount": 20,
-      "categoryId": 1
-    },
-    {
-      "id": 6,
-      "name": "ENERGETICA RED BULL",
-      "urlImage": "https://dojiw2m9tvv09.cloudfront.net/11132/product/redbull8381.jpg",
-      "price": 1490,
-      "discount": 0,
-      "categoryId": 1
-    },
-    {
-      "id": 7,
-      "name": "ENERGETICA SCORE",
-      "urlImage": "https://dojiw2m9tvv09.cloudfront.net/11132/product/logo7698.png",
-      "price": 1290,
-      "discount": 0,
-      "categoryId": 1
-    },
-    {
-      "id": 34,
-      "name": "ENERGETICA MONSTER RIPPER",
-      "urlImage": "https://dojiw2m9tvv09.cloudfront.net/11132/product/mosterriper0436.jpg",
-      "price": 1990,
-      "discount": 0,
-      "categoryId": 1
-    },
-    {
-      "id": 35,
-      "name": "ENERGETICA MAKKA DRINKS",
-      "urlImage": "https://dojiw2m9tvv09.cloudfront.net/11132/product/makka-drinks-250ml0455.jpg",
-      "price": 1190,
-      "discount": 0,
-      "categoryId": 1
-    },
-    {
-      "id": 36,
-      "name": "ENERGETICA MONSTER VERDE",
-      "urlImage": "https://dojiw2m9tvv09.cloudfront.net/11132/product/monsterverde0476.jpg",
-      "price": 1990,
-      "discount": 0,
-      "categoryId": 1
-    },
-    {
-      "id": 77,
-      "name": "ENERGETICA MONSTER RIPPER",
-      "urlImage": "",
-      "price": 1990,
-      "discount": 0,
-      "categoryId": 1
-    },
-    {
-      "id": 79,
-      "name": "ENERGETICA MONSTER VERDE",
-      "urlImage": "",
-      "price": 1990,
-      "discount": 0,
-      "categoryId": 1
-    }
-  ]
-}
-```
-
-- /api/v1/categories/:id
-- - Obtiene una categoria por su id.
-
-```javascript
-{
-  "id": 1,
-  "name": "bebida energetica"
-}
-```
+Licencia [MIT](https://opensource.org/licenses/MIT)
 
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/12459556-a2b21b4d-aef2-488c-95ac-c4be7db537c3?action=collection%2Ffork&collection-url=entityId%3D12459556-a2b21b4d-aef2-488c-95ac-c4be7db537c3%26entityType%3Dcollection%26workspaceId%3D3832ba21-03bc-4fec-835f-47724b1aef42)
 
 
-https://www.postman.com/luisangeluis/workspace/bsale/collection/12459556-a2b21b4d-aef2-488c-95ac-c4be7db537c3?action=share&creator=12459556
+
+

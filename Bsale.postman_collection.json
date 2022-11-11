@@ -27,7 +27,7 @@
 								"products"
 							]
 						},
-						"description": "**Obtiene todos los productos disponibles**"
+						"description": "**Obtiene todos los productos disponibles.**\n\n**Cada producto cuenta con los siguientes elementos:**\n\n- id: Tiene un id de tipo **int**\n- name: Nombre del producto de tipo **string**\n- urlImage: Url de la imagen de tipo **string**\n- price: Precio del producto de tipo **float**\n- discount: Descuento del producto de tipo **int**\n- categoryId: Indica a que categoria pertenece es de tipo **int**"
 					},
 					"response": [
 						{
@@ -115,7 +115,7 @@
 								}
 							]
 						},
-						"description": "**Filtra para encontrar productos con nombres parecidos en el valor ingresado en :name.**"
+						"description": "**Filtra para encontrar productos con nombres parecidos en el valor ingresado en name.**\n\nStartFragment\n\n**Cada producto cuenta con los siguientes elementos:**\n\n- id: Tiene un id de tipo **int**\n- name: Nombre del producto de tipo **string**\n- urlImage: Url de la imagen de tipo **string**\n- price: Precio del producto de tipo **float**\n- discount: Descuento del producto de tipo **int**\n- categoryId: Indica a que categoria pertenece es de tipo **int**\n    \n\nEndFragment"
 					},
 					"response": [
 						{
@@ -210,7 +210,7 @@
 								}
 							]
 						},
-						"description": "**Obtiene un producto por su id.**"
+						"description": "**Obtiene un producto por su id.**\n\nStartFragment\n\n**Cada producto cuenta con los siguientes elementos:**\n\n- id: Tiene un id de tipo **int**\n- name: Nombre del producto de tipo **string**\n- urlImage: Url de la imagen de tipo **string**\n- price: Precio del producto de tipo **float**\n- discount: Descuento del producto de tipo **int**\n- categoryId: Indica a que categoria pertenece es de tipo **int**\n    \n\nEndFragment"
 					},
 					"response": [
 						{
@@ -368,7 +368,7 @@
 								"categories"
 							]
 						},
-						"description": "**Obtiene todas las categorias disponibles.**"
+						"description": "**Obtiene todas las categorias disponibles.**\n\nStartFragment\n\n**Cada categoria cuenta con los siguientes elementos:**\n\n- id: Tiene un id de tipo **int**\n- name: Nombre de la categoria de tipo **string**\n    \n\nEndFragment"
 					},
 					"response": [
 						{
@@ -617,7 +617,7 @@
 								}
 							]
 						},
-						"description": "**Obtiene la información de una categoria por su id.**"
+						"description": "**Obtiene la información de una categoria por su id.**\n\n**Cada categoria cuenta con los siguientes elementos:**\n\n- id: Tiene un id de tipo **int**\n- name: Nombre de la categoria de tipo **string**"
 					},
 					"response": [
 						{
