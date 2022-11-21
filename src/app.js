@@ -17,21 +17,6 @@ db.authenticate()
   .then(res => console.log('database autenticate'))
   .catch(error => console.log(error))
 
-// if (process.env.NODE_ENV === 'production') {
-//   db.sync()
-//     .then(() => {
-//       console.log('database synced');
-//       defaultData();
-//     })
-//     .catch(error => console.log(error))
-// } else {
-//   db.sync()
-//     .then(() => {
-//       console.log('database synced');
-//       defaultData();
-//     })
-//     .catch(error => console.log(error))
-// }
 //para que el body de la peticion no salga undefined
 app.use(express.json());
 

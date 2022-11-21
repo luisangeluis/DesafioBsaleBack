@@ -42,7 +42,7 @@ const getByCategoryId = (req, res) => {
 
   productsControllers.readProductsByCategoryId(categoryId)
     .then(response => {
-      console.log('la response',response);
+      // console.log('la response',response);
       if (response.length) return res.status(200).json({ items: response.length, response })
       else return res.status(404).json({ message: `Category with id:${categoryId} doesn't exist` })
     })
